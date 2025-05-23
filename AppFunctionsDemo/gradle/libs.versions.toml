@@ -1,0 +1,30 @@
+[versions]
+androidGradlePlugin = "8.2.0"
+kotlin = "1.9.0"
+compileSdk = "34"
+minSdk = "24"
+targetSdk = "34"
+androidxActivity = "1.8.0"
+androidxCoreKtx = "1.12.0"
+androidxEspressoCore = "3.5.1"
+androidxJunit = "1.1.5"
+appcompat = "1.6.1"
+material = "1.10.0" # Added material design
+
+[libraries]
+# AndroidX
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidxActivity" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCoreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" } # Added appcompat
+
+# UI
+material = { group = "com.google.android.material", name = "material", version.ref = "material" } # Added material
+
+# Testing
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspressoCore" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
