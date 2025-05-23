@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
@@ -43,6 +44,9 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material) // Material Design components
     implementation(libs.androidx.activity.ktx) // For by viewModels and other activity extensions
+    implementation(libs.androidx.appfunctions)
+    implementation(libs.androidx.appfunctions.service)
+    kapt(libs.androidx.appfunctions.compiler)
 
     // Jetpack Compose
     implementation(platform(libs.androidx.compose.bom))
