@@ -1,0 +1,5 @@
+# Gradle cache
+.gradle/
+
+# Application build outputs
+app/build/

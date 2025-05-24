@@ -1,7 +1,7 @@
 plugins {
+    id("org.jetbrains.kotlin.kapt") version "1.9.0" // Explicitly set Kapt version
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
